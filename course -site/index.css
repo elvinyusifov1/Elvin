@@ -1,0 +1,26 @@
+*{margin: 0;padding: 0; box-sizing: border-box;font-family: 'Roboto Condensed', sans-serif;}
+.header{padding: 10px; 
+text-align: center;
+background-color: goldenrod;
+color: aliceblue;}
+.header h2{padding-top: -4px;}
+.navbar{background-color: grey;display: flex;justify-content: center;align-items: center;}
+.navbar a{text-decoration: none;color: bisque;padding: 20px;}
+.navbar .item-1{position: absolute;left: 10px;}
+.main{display:flex;
+}
+.sidebar{flex: 25%;order: 1;}
+.main.container{flex: 75%;}
+.main .sidebar h1{font-size: 25px;color: blue; background-color: rgb(43, 168, 226);padding: 5px;width: 180px; text-align: center;letter-spacing: 6px;}
+.main .sidebar h1 span{font-size: 30px;color: rgb(249, 249, 255);}
+.sidebar p{}
+#sidebar-ph{background-color:grey;width: 100%;height: 200px;}
+#sidebar-ph1{background-color: grey;width: 100%;height: 50px;margin-top: 20px;}
+#sidebar-ph2{background-color:grey;width: 100%;height: 50px;margin-top: 10px;}
+.container h1{color: brown; font-size: 30px;}
+.container #container-ph{width: auto;background: gray;height: 200px;}
+.container-p{margin-top: 10px;}
+.container #container-ph1{margin-top: 10px; width: 100%;background: gray;height: 200px;}
+.container #container-ph2{margin-top: 15px; width: 100%;background: gray;height: 50px;}
+div{padding: 10px;}
+@media (max-width: 600px){.navbar, .main{flex-direction: column;}}

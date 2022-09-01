@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap");
+.backround {
+  width: 100%;
+  height: 100vh;
+  background: url(e88c1468-6726-4940-8e0b-63514daa4e29.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.social-media {
+  position: absolute;
+  width: 220px;
+  height: 150px;
+  top: 450px;
+}
+.media {
+  height: 50px;
+  display: block;
+  color: aliceblue;
+  text-align: end;
+  padding-right: 10px;
+}
+.social-media .media {
+  padding-top: 10px;
+  padding-left: 10px;
+  font-size: 30px;
+}
+.social-media .facebook {
+  background-color: blue;
+  border-top-right-radius: 15px;
+  width: 50px;
+}
+.social-media .facebook:hover{width: 60px;background-color: black;}
+.social-media .facebook:hover {}
+
+
+.social-media .instagram{background-color: blueviolet;width: 50px;border-top-right-radius: 10px;}
+
+
+.social-media .whatsapp {
+  background-color: green;
+  width: 50px;
+}
+
+.header {
+  transition-duration: 0.7s;
+  transition-delay: 0.3s;
+  text-decoration: underline;
+  position: sticky;
+  left: 500px;
+  top: 60px;
+  color: aliceblue;
+  display: inline-flex;
+  border: 1px rgb(133, 134, 148) solid;
+  width: 600px;
+  height: 50px;
+  border-radius: 20px;
+  box-shadow: 5px 5px 0.1px rgba(138, 164, 170, 0.973);
+}
+.header:hover {
+  background-color: rgb(12, 211, 201);
+  width: 800px;
+}
+.header:hover ul li {
+  padding-left: 40px;
+}
+.header ul li a {
+  transition-duration: 0.6s;transition-delay: .3s;
+}
+.header ul li:hover a {
+  color: black;
+  font-size: 30px;
+}
+.header a img {
+  position: absolute;
+  width: 90px;
+  height: 40px;
+  border: 1px;
+  border-radius: 19px;
+  left: 9px;
+  top: 3px;
+}
+.header ul {
+  display: inline-flex;
+  position: absolute;
+  left: 100px;
+  top: 10px;
+  letter-spacing: 1px;
+}
+.header ul li {
+  padding-right: 14px;
+  transition-duration: 0.9s;
+}
+.header ul li a {
+  font-size: 25px;
+  font-weight: 100;
+  color: aliceblue;
+}
+
+.center {
+  text-decoration: none;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  position: relative;
+  height: 500px;
+  width: 100%;
+  background-color: bisque;
+  text-align: center;
+  padding-top: 100px;
+}
+.center .section {
+  display: inline-block;
+  width: 25%;
+  height: 50%;
+  border: 1px black solid;
+  border-radius: 10px;
+}
+.center section img {
+  float: left;
+  border-radius: 10px;
+}
+.center .part-1 {
+  background-color: violet;
+}
+.center .part-2 {
+  background-color: blue;
+}
+.center .part-3 {
+  background-color: rgb(196, 21, 94);
+}
+.center .part-4 {
+  background-color: rgb(0, 255, 21);
+}
+.center .part-5 {
+  background-color: rgb(0, 217, 255);
+}
+.center .part-6 {
+  background-color: rgb(166, 255, 0);
+}

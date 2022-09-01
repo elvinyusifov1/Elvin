@@ -1,0 +1,7 @@
+.contact .row{display: flex; width: 100%;background-color: grey;}
+
+.contact .column{flex: 1;padding: 20px;}
+.contact .column img{width: 100%;} 
+.contact .row .column-2{display: flex; flex-direction: column; justify-content: center;align-items: flex-start;  padding: 5px;margin: 65px;opacity: .7;}
+.contact .row .column-2 form div{ padding: 5px;}
+.contact .row .column-2 form div input{ height: 30px; border-radius: 15px;}

@@ -1,0 +1,15 @@
+.center-card{width: 100%;height: 100vh; display: flex; color: antiquewhite;background-color: rgba(60, 131, 107, 0.562);flex-direction: column;margin: 0;}
+.cards{display: flex;justify-content:center ;background-color: black;height: 300px;}
+.card-1{padding: 10px;width: 20%;height: 400px;}
+img{width: 100%;}
+.in-card{background-color: rgb(70, 70, 18); text-align: center; padding: 0;margin-top: 20px;}
+.in-card p{background-color: rgb(32, 78, 78);} 
+.in-card h3{background-color: rgb(55, 55, 197);margin-top: 0;}
+*{margin: 0; padding: 0;}
+
+.cercle{display: flex;
+     justify-content: center; 
+    align-items: center;
+;}
+.cercle .situation-1{ width: 20%; padding: 10px; text-align: center; display: ;background-color: blue;}
+.cercle .situation-1 img{border-radius: 50%;padding;}
