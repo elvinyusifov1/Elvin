@@ -7,25 +7,40 @@
     <title>Document</title>
 </head>
 <style>
-.grid{display: grid; grid-template-columns: repeat(3,1fr);grid-template-rows: repeat(2,100px 150px);gap: 10px;}
-.header{grid-column: 1/span 3; text-align:  center ;background-color:blueviolet  ;}
-.content{grid-column: 1/span 3;text-align-last: center;}
-.footer{grid-column: 1/4; text-align: center; background-color: blueviolet;}
+    .container{display: grid;gap: 10px;
+    grid-template-columns: repeat(3,1fr);
+grid-template-areas: "header header header"
+                     "sidebar box box"
+                     " footer footer footer";}
+    .header{grid-area:header; background-color: blue;}
+    .sidebar{grid-area: sidebar; background-color: brown;}
+    .box{grid-area: box; background-color: aqua; display: grid; grid-template-columns:repeat(4, 1fr) ;gap: 10px;}
 
+           @media(max-width:640px){ .container  {grid-template-columns: repeat(2,1fr);
+             grid-template-areas: "header"
+                                    "sidebar"
+                                     "box"
+       ;}
+           @media(max-width:500px){ .container{ grid-template-columns: repeat(1, 1fr);}}
+        }
+            
+               
 </style>
 
 <body>
-    <div class="grid">
-    <div class="header">
-        <h1>salam dunya</h1>
-        <p>eleykime selam</p>
-    </div>
-    <section class="content">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, quod.</p>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam error hic consequatur, sed fuga eveniet quos libero repudiandae omnis cumque in esse enim placeat aut molestiae excepturi architecto, ducimus est!</p>
-        <button class="btn">join us</button>
-    </section>
-    <footer class="footer">copyright</footer>
+ <div class="container">
+    <div class="header"><h1>Header</h1></div>
+   
+        <div class="sidebar">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam, impedit aliquam harum officiis deserunt quam deleniti neque magnam quidem non facilis incidunt error sunt voluptate enim id, necessitatibus quas repellat!</div>
+       
+    
+    <div class="box">
+    <div class="box1">box-1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus exercitationem recusandae animi, quasi optio aperiam qui neque quia voluptatum corrupti eius repellat nihil doloremque, modi quam. Totam debitis culpa alias.</div>
+    <div class="box1">box-2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A repellendus ipsum velit sed ab magni excepturi iure corrupti, quia similique totam, quae nemo blanditiis illo fugiat ut aut porro? Magnam.</div>
+    <div class="box1">box-3 Lorem ipsum dolor sit amet consectetur adipisicing elit. A vitae pariatur dolorem explicabo sequi laborum, asperiores debitis sed labore facere dignissimos sit architecto delectus magni rerum ab perferendis. Deleniti, soluta!</div>
+    <div class="box1">box-4 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus neque qui dolore molestiae consequatur cumque temporibus error nobis quod laboriosam officiis soluta maxime deserunt expedita suscipit excepturi autem, dolores accusamus?</div></div>
+ </div>
+ <footer class="footer">copyright</footer>
 </div>
 
 
