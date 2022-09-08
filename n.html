@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       .container{display: grid;
+         height: 1700px;
+         grid-template-rows: 100px 1fr 400px;
+         grid-template-areas: "header"
+                              "center"
+                              "footer" ;
+         row-gap: 10px;}
+        .header   {grid-area: header;}  
+        .center   {grid-area: center;
+                  display: grid;
+                  grid-template-rows: 3fr 8fr;}
+        .center .intro{}
+
+        .center .centerbox {display: grid;
+                            grid-template-columns: repeat(3,1fr);
+                            grid-template-rows: 4fr 5fr 4fr; } 
+         .center .centerbox > div:first-child{grid-column: 1/span 2;}    
+         .center .centerbox > div:last-child{grid-column-start: 4;
+        grid-column-end: 2;}             
+
+        .footer  {grid-area: footer;}                           
+    </style>
+</head>
+<body>
+<div class="container">
+    <section class="header"><img src="/New folder (2)/download 1.jpg" alt="Online tehsil"></section>
+
+    <section class="center">
+        <div class="intro">intro</div>
+        <div class="centerbox">
+   <div class="item"> item1</div>
+   <div class="item"> item2</div>
+   <div class="item"> item3</div>
+   <div class="item"> item4</div>
+   <div class="item"> item5</div>
+   <div class="item"> item6</div>
+   <div class="item"> item7</div>
+  
+  
+        </div>
+    </section>
+
+    <section class="footer">footer</section>
+</div>
+
+
+
+
+    
+</body>
+</html>
